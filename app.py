@@ -14,14 +14,14 @@ import pickle
 app = flask.Flask(__name__)
 
 # load model
-heart = pickle.load(open("ML-HeartDisease-master/logregheart.pkl","rb"))
+heart = pickle.load(open("logregheart.pkl","rb"))
 
 # routes
 @app.route("/")
 def home():
     return """
            <body> 
-           <h1>Heart Disease Prediction<h1>
+           <h1 align=center>Heart Disease Prediction<h1>
            </body>"""
 
 @app.route("/predict", methods=["GET"])
