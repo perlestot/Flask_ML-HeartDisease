@@ -22,7 +22,11 @@ def home():
     return """
            <body> 
            <h1 align=center>Heart Disease Prediction by Parin<h1>
-           </body>"""
+           </body>
+           <form action="https://heart-disease-logit-parin.herokuapp.com/page">
+           <input type="submit" value="Get Start!!" style="font-weight: bold; margin:0px auto; display:block;"/>
+           </form>
+           """
 
 @app.route("/predict", methods=["GET"])
 def predict():
