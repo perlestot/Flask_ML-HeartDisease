@@ -21,7 +21,7 @@ heart = pickle.load(open("logregheart.pkl","rb"))
 def home():
     return """
            <body> 
-           <h1 align=center>Heart Disease Prediction<h1>
+           <h1 align=center>Heart Disease Prediction by Parin<h1>
            </body>"""
 
 @app.route("/predict", methods=["GET"])
